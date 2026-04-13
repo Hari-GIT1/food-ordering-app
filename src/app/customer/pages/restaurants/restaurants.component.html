@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Restaurants</h2>
+  
+    <div class="card" *ngFor="let r of restaurants" (click)="openMenu(r.id)">
+      
+      <img [src]="r.image" alt="restaurant">
+      
+      <div class="details">
+        <h3>{{ r.name }}</h3>
+        <p>{{ r.cuisine }}</p>
+        <span>⭐ {{ r.rating }}</span>
+      </div>
+  
+    </div>
+  </div>

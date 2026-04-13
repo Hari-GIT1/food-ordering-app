@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Menu</h2>
+  
+    <div class="card" *ngFor="let item of menuItems">
+      
+      <div>
+        <h3>{{ item.name }}</h3>
+        <p>₹{{ item.price }}</p>
+      </div>
+  
+      <button (click)="addToCart(item)">Add to Cart</button>
+  
+    </div>
+    <button (click)="goToCart()">Go to Cart</button>
+  </div>

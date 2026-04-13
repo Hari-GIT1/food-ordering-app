@@ -1,0 +1,17 @@
+.container {
+    padding: 20px;
+  }
+  
+  .card {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  img {
+    width: 100px;
+    height: 100px;
+  }
